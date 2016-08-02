@@ -1,0 +1,20 @@
+{
+  "name": "now-proxy",
+  "version": "1.0.0",
+  "description": "Deploy a reverse proxy as a now.sh instance",
+  "bin": "./build/bin/now-proxy.js",
+  "author": "Nathan Rajlich <n@n8.io> (http://n8.io)",
+  "license": "MIT",
+  "scripts": {
+    "build": "n8-make ROOT=bin"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.11.6",
+    "cp-r": "^0.1.2",
+    "fs-promise": "^0.5.0",
+    "tempdir": "^1.0.0"
+  },
+  "devDependencies": {
+    "n8-make": "^1.5.0"
+  }
+}
