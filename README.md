@@ -14,7 +14,7 @@ Simply invoke `now-proxy` with the base URL you would like to proxy to:
 
 ```bash
 $ now-proxy http://my-apartment.example.com:8888
-> https://now-proxy-nd23n2.now.sh
+> https://now-proxy-dmudqyamnj.now.sh
 ```
 
 ## Installing
