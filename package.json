@@ -8,6 +8,10 @@
   "scripts": {
     "build": "n8-make ROOT=bin"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/now-proxy.git"
+  },
   "dependencies": {
     "babel-runtime": "^6.11.6",
     "cp-r": "^0.1.2",
