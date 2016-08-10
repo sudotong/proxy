@@ -2,9 +2,12 @@
 
 import cp from 'cp-r';
 import tempdir from 'tempdir';
+import moduleRoot from 'module-root';
 import { resolve } from 'path';
 import { spawn } from 'child_process';
 import { writeFile } from 'fs-promise';
+
+const __root = moduleRoot();
 
 const target = process.argv[2];
 if (!target) {
@@ -22,7 +25,7 @@ process.on('unhandledRejection', (err, promise) => {
 (async () => {
   const dirname = await tempdir();
 
-  const deploy = resolve(__dirname, '..', 'deploy');
+  const deploy = resolve(__root, 'deploy');
   await cp(deploy, dirname);
 
   const config = { target };
