@@ -1,6 +1,6 @@
 {
   "name": "now-proxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy a reverse proxy as a now.sh instance",
   "bin": "./build/bin/now-proxy.js",
   "author": "Nathan Rajlich <n@n8.io> (http://n8.io)",
