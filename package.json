@@ -15,7 +15,9 @@
     "node": "8"
   },
   "dependencies": {
-    "http-proxy": "^1.16.2"
+    "camel-case": "^3.0.0",
+    "http-proxy": "^1.16.2",
+    "yn": "^2.0.0"
   },
   "now": {
     "files": [
