@@ -8,6 +8,7 @@ aliasing, etc. benefits that come with now by default.
 
 Backed by [`node-http-proxy`](https://github.com/nodejitsu/node-http-proxy).
 
+
 ## Usage
 
 Simply invoke `now now-examples/proxy` and specify the base URL you would
@@ -16,3 +17,13 @@ like to proxy to:
 ```bash
 $ now now-examples/proxy -e PROXY_URL=http://my-apartment.example.com:8888/foo
 ```
+
+
+## Configuration
+
+Any of the `node-http-proxy` configuration options may be specified via
+environment variables prefixed with `PROXY_`. For example, the `xfwd` option
+may be specified with the `PROXY_XFWD=true` env var.
+
+See the [full list of
+options](https://github.com/nodejitsu/node-http-proxy#options).
