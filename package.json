@@ -1,25 +1,28 @@
 {
   "name": "now-proxy",
   "version": "1.0.1",
-  "description": "Deploy a reverse proxy as a now.sh instance",
-  "bin": "./build/bin/now-proxy.js",
-  "author": "Nathan Rajlich <n@n8.io> (http://n8.io)",
+  "description": "Simple reverse proxy service for now.sh",
+  "author": "Nathan Rajlich <nate@zeit.co>",
   "license": "MIT",
   "scripts": {
-    "build": "n8-make ROOT=bin"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/now-proxy.git"
+    "url": "git://github.com/now-examples/proxy.git"
+  },
+  "engines": {
+    "node": "8"
   },
   "dependencies": {
-    "babel-runtime": "^6.11.6",
-    "cp-r": "^0.1.2",
-    "fs-promise": "^0.5.0",
-    "module-root": "^0.2.0",
-    "tempdir": "^1.0.0"
+    "http-proxy": "^1.16.2"
   },
-  "devDependencies": {
-    "n8-make": "^1.5.0"
+  "now": {
+    "files": [
+      "*.js"
+    ],
+    "env": [
+      "PROXY_URL"
+    ]
   }
 }

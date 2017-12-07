@@ -1,4 +1,4 @@
-# &#120491; now-proxy
+# &#120491; Now Proxy
 
 Deploy a reverse proxy as a [now](https://now.sh) instance.
 
@@ -10,15 +10,9 @@ Backed by [`node-http-proxy`](https://github.com/nodejitsu/node-http-proxy).
 
 ## Usage
 
-Simply invoke `now-proxy` with the base URL you would like to proxy to:
+Simply invoke `now now-examples/proxy` and specify the base URL you would
+like to proxy to:
 
 ```bash
-$ now-proxy http://my-apartment.example.com:8888
-> https://now-proxy-dmudqyamnj.now.sh
-```
-
-## Installing
-
-```bash
-$ npm install -g now-proxy
+$ now now-examples/proxy -e PROXY_URL=http://my-apartment.example.com:8888/foo
 ```
