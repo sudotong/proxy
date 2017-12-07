@@ -23,7 +23,8 @@ $ now now-examples/proxy -e PROXY_URL=http://my-apartment.example.com:8888/foo
 
 Any of the `node-http-proxy` configuration options may be specified via
 environment variables prefixed with `PROXY_`. For example, the `xfwd` option
-may be specified with the `PROXY_XFWD=true` env var.
+may be specified with the `PROXY_XFWD=1` env var, and the `autoRewrite` option
+would look like `PROXY_AUTO_REWRITE=1`.
 
 See the [full list of
 options](https://github.com/nodejitsu/node-http-proxy#options).
