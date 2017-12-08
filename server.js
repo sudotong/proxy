@@ -31,7 +31,8 @@ const config = Object.assign(
     }, {})
 );
 
-console.log('Proxy configuration:', config);
+console.log('Proxy configuration');
+console.log(JSON.stringify(config, null, 2));
 
 const proxy = httpProxy.createProxyServer();
 
