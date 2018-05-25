@@ -20,9 +20,6 @@
     "yn": "^2.0.0"
   },
   "now": {
-    "files": [
-      "*.js"
-    ],
     "env": [
       "PROXY_URL"
     ]

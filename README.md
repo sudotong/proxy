@@ -15,7 +15,7 @@ Simply invoke `now now-examples/proxy` and specify the base URL you would
 like to proxy to:
 
 ```bash
-$ now now-examples/proxy -e PROXY_URL=http://my-apartment.example.com:8888/foo
+$ now now-examples/proxy --docker -e PROXY_URL=http://my-apartment.example.com:8888/foo
 ```
 
 
