@@ -1,0 +1,8 @@
+{
+	"name":"now-proxy",
+	"type":"docker",
+	"env":["PROXY_URL"],
+	"engines":{
+		"node": "8"
+	}
+}

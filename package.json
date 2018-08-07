@@ -11,17 +11,9 @@
     "type": "git",
     "url": "git://github.com/now-examples/proxy.git"
   },
-  "engines": {
-    "node": "8"
-  },
   "dependencies": {
     "camel-case": "^3.0.0",
     "http-proxy": "^1.16.2",
     "yn": "^2.0.0"
-  },
-  "now": {
-    "env": [
-      "PROXY_URL"
-    ]
   }
 }
